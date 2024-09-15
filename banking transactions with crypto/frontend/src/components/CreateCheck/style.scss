@@ -1,0 +1,23 @@
+.create-check__btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 24px;
+    background-color: #116ACC;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+
+    svg {
+        margin-right: 10px;
+    }
+
+    span {
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        color: white;
+    }
+}

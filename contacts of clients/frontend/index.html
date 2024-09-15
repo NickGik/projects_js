@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиенты</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
+    <link rel="stylesheet" href="style.css">     
+</head>
+
+<body class="body">
+
+    <div class="modal-container">
+        <div class="modal" id="modalContent">
+            
+        </div>
+    </div>    
+    
+    <header class="header">
+        <div class="container-head">
+            <a class="header__logo">
+                <img src="img/logo.png" alt="Изображение логотипа">
+            </a>
+            <form action="#" class="form">
+                <input type="text" aria-label="Строка поиска" class="form__search" placeholder="Введите запрос">
+            </form>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <div class="adaptive-block">
+                <h1 class="content__h1">Клиенты</h1>
+                <table class="clients" >
+                    <thead class="clients__thead" id="table-header">
+
+                        <tr>
+                            <th class="clients__th clients__th-id sortable-header" data-column-index="0">
+                                <span class="clients__main">
+                                    <span class="clients__text">ID</span>
+                                    <span id="arrow-icon-0" class="arrow-icon">
+                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                                        </svg>
+                                    </span>
+                                </span>
+                            </th>
+                            <th class="clients__th sortable-header" data-column-index="1">
+                                <span class="clients__main">
+                                    <span class="clients__text">Фамилия Имя Отчество</span>
+                                    <span id="arrow-icon-1" class="arrow-icon">
+                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                                        </svg>
+                                        <span class="client_AZ">А-Я</span>
+                                    </span>
+                                </span>
+                            </th>
+                            <th class="clients__th sortable-header" data-column-index="2">
+                                <span class="clients__main">
+                                    <span class="clients__text">Дата и время создания</span>
+                                    <span id="arrow-icon-2" class="arrow-icon">
+                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                                        </svg>                                        
+                                    </span>
+                                </span>
+                            </th>
+                            <th class="clients__th sortable-header" data-column-index="3">
+                                <span class="clients__main">
+                                    <span class="clients__text">Последние изменения</span>
+                                    <span id="arrow-icon-3" class="arrow-icon">
+                                        <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                                        </svg>                                        
+                                    </span>
+                                </span>
+                            </th>
+                            <th class="clients__th">Контакты</th>
+                            <th class="clients__th">Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="clientTableBody" class="clients__tbody">
+                        <!-- Остальные строки таблицы будут добавлены динамически в JavaScript-коде -->
+
+                        <!-- Блок для индекатора загрузки -->
+                        <div id="loadingIndicator" class="indicator__block">
+                            <svg class="spin" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_121_2401)">
+                                <path d="M14.0002 50.0005C14.0002 69.8825 30.1182 86.0005 50.0002 86.0005C69.8822 86.0005 86.0002 69.8825 86.0002 50.0005C86.0002 30.1185 69.8823 14.0005 50.0003 14.0005C45.3513 14.0005 40.9082 14.8815 36.8282 16.4865" stroke="#9873FF" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round"/>
+                                </g>
+                                <defs>
+                                <clippath id="clip0_121_2401">
+                                <rect width="100" height="100" fill="white"/>
+                                </clippath>
+                                </defs>
+                            </svg>
+                        </div>
+                    </tbody>            
+                </table>
+            </div>
+        </div>
+    </section>
+  
+    <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+    <script defer src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+.grid-main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); 
+  grid-template-rows: auto auto 1fr auto; 
+
+  .grid-h1 {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+
+  .grid-btn {
+    grid-column: 11 / 13;
+    grid-row: 1 / 2;
+  }
+
+  .grid-numb {
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+  }
+  
+  .grid-balance-numb {
+    grid-column: 10 / 13;
+    grid-row: 2 / 3;
+  }
+
+  .grid-balans-graph {
+    grid-column: 1 / 13;
+    grid-row: 4 / 5;
+  }
+
+  .grid-trans-graph {
+    grid-column: 1 / 13;
+    grid-row: 5 / 6;
+  }
+
+  .grid-history {
+    grid-column: 1 / 13;
+    grid-row: 6 / 7;
+  }
+}
+
+
+.balance-transaction {
+  padding: 25px 50px;
+  border-radius: 50px;
+  background-color: transparent;
+  box-shadow: 0px 5px 20px 0px #00000040;
+}
+
+.chart-container-trans {
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.balance-transaction__h2 {
+  font-family: Work Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.46px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #000000;
+  margin-bottom: 25px;
+}

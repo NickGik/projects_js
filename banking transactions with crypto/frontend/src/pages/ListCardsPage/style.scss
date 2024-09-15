@@ -1,0 +1,57 @@
+@import '../../components/Header/style.scss';
+
+.processing {
+    width: 100%;
+
+    .processing__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0;
+
+        .processing__form {
+            display: flex;
+            align-items: center;
+
+            .processing__label {
+                display: flex;
+                align-items: center;
+
+                h2 {
+                    font-family: Work Sans;
+                    font-size: 34px;
+                    font-weight: 700;
+                    line-height: 39.88px;
+                    margin-right: 35px;
+                }
+            }
+
+            .processing__select {
+                width: 300px;
+                border-radius: 7px;
+                background-color: transparent;
+                padding: 10px 15px;
+                font-family: Ubuntu;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                border: 1px solid #116ACC;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .processing__list {
+        width: 100%;
+        .processing__list__ul {
+            width: 100%;
+            list-style-type: none;
+            .processing__list__item {
+                margin: 0;
+            }
+        }
+    }
+}

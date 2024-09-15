@@ -1,0 +1,39 @@
+    .nav {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+
+        .nav__ul {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style-type: none;
+
+            .nav__item:not(:last-child) {
+                margin-right: 15px;
+            }
+
+            .nav__btn {
+                padding: 12px 15px;
+                background-color: #fff;
+                color: #116ACC;
+                font-size: 400;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    .nav__btn.active {
+        background-color: #3da0c7 !important; 
+        color: white !important; 
+      }
+      
+      
+    
+
+

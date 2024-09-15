@@ -1,0 +1,36 @@
+@import '../../components/AuthForm/style.scss';
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header {
+    width: 100%;
+    background-color: #116ACC;
+
+    .header__block {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0px;
+    }
+
+    .header__h1 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+        margin: 0;
+    }
+}
+
+.main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
